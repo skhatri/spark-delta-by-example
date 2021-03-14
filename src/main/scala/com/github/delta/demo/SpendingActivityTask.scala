@@ -27,8 +27,12 @@ object SpendingActivityTask extends App {
       .selectExpr(
         "*",
         "false as deleted",
-        "'%s' as load_date".format(eodDate)
-      )
+        "to_date('%s') as %s".format(eodDate, R.partitionKey),
+        "to_date(txn_date) as transaction_date",
+        "float(amount) as amt"
+      ).drop("txn_date", "amount")
+      .withColumnRenamed("amt", "amount")
+      .withColumnRenamed("transaction_date", "txn_date")
 
 
     if (isDelta) {

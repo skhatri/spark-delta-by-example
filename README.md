@@ -33,13 +33,14 @@ CREATE DATABASE banking;
 
 CREATE EXTERNAL TABLE banking.transactions(
     account string,
-    txn_date date,
     txn_id string,
     merchant string,
-    amount float,
     category string,
     last_updated timestamp
-) partitioned by (load_date date)
+    deleted boolean,
+    txn_date date,
+    amount float
+) partitioned by (version date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
 STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.SymlinkTextInputFormat'
 OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
