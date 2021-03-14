@@ -39,7 +39,7 @@ CREATE EXTERNAL TABLE banking.transactions(
     amount float,
     category string,
     last_updated timestamp
-) partitioned by (version date)
+) partitioned by (load_date date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
 STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.SymlinkTextInputFormat'
 OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
