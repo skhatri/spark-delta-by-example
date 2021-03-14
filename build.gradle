@@ -18,7 +18,7 @@ repositories {
 }
 
 task runApp(type: JavaExec) {
-  main="com.github.skhatri.spark.SparkEPLStandings"
+  main="com.github.delta.demo.SpendingActivityQueryTask"
   classpath=sourceSets.main.runtimeClasspath
   jvmArgs = ['-Xms512m', '-Xms512m']
 }
