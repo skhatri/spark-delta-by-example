@@ -2,6 +2,6 @@ account,txn_date,txn_id,merchant,amount,category,last_updated
 acc2,2021-03-05,txn35,"David Jones Sydney",120,Fashion,2021-03-08T13:00:00Z
 acc4,2021-03-05,txn41,"Vapiano",20.0,Fast Food,2021-03-04T13:00:00Z
 acc5,2021-03-05,txn44,"Apple Store Sydney",1500,Phone,2021-03-08T13:00:00Z
-acc1,2021-04-09,txn48,"Nike Livermore CA, US",195.90,Clothing,2021-03-08T13:00:00Z
-acc4,2021-04-09,txn49,"Sushi Hub",20,Food,2021-03-08T13:00:00Z
-acc2,2021-04-09,txn50,"Coles Hurstville",140.65,Groceries,2021-03-08T13:00:00Z
+acc1,2021-03-09,txn48,"Nike Livermore CA, US",195.90,Clothing,2021-03-08T13:00:00Z
+acc4,2021-03-09,txn49,"Sushi Hub",20,Food,2021-03-08T13:00:00Z
+acc2,2021-03-09,txn50,"Coles Hurstville",140.65,Groceries,2021-03-08T13:00:00Z

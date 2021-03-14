@@ -22,8 +22,31 @@ Run ```SpendingActivityQueryTask``` to see the total number of records for each 
 - Find total number of activities by account
 - As of version 3, what was transaction id ```txn10``` labelled as?
 - What is the latest label of transaction id ```txn10``` and when was it last updated?
-- Acc5 spent 1500 in apple store, how did the label for this transaction change over time?
+- Acc5 bought something from Apple Store Sydney on 2021-03-05, how did the label for this transaction change over time?
 
+#### Querying from Presto/Trino
+Create sym link manifest by running ```PrestoTrinoConfigTask```
+
+Create Hive Table and Repair it
+```
+CREATE DATABASE banking;
+
+CREATE EXTERNAL TABLE banking.transactions(
+    account string,
+    txn_date date,
+    txn_id string,
+    merchant string,
+    amount float,
+    category string,
+    last_updated timestamp
+) partitioned by (version date)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.SymlinkTextInputFormat'
+OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
+LOCATION '/opt/data/output/activity/_symlink_format_manifest/';
+
+MSCK REPAIR TABLE banking.transactions;
+```
 
 
 

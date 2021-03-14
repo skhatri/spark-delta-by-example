@@ -1,6 +1,6 @@
 account,txn_date,txn_id,merchant,amount,category,last_updated
 acc3,2021-03-02,txn8,"Zushi Sushi",44,Restaurant,2021-03-07T13:00:00Z
-acc4,2021-03-02,txn10,"Prouds Jewellery",189,Jewellery,2021-03-07T13:00:00Z
+acc4,2021-03-02,txn10,"Prouds Jewellery",189,Fashion,2021-03-07T13:00:00Z
 acc2,2021-03-03,txn20,"Prada Sydney",1900,Fashion,2021-03-07T13:00:00Z
-acc3,2021-04-08,txn46,"Priceline Pharmacy Wynyard",13.50,Beauty,2021-03-07T13:00:00Z
-acc1,2021-04-08,txn47,"Event Cinemas Town Hall",36.0,Entertainment,2021-03-07T13:00:00Z
+acc3,2021-03-08,txn46,"Priceline Pharmacy Wynyard",13.50,Beauty,2021-03-07T13:00:00Z
+acc1,2021-03-08,txn47,"Event Cinemas Town Hall",36.0,Entertainment,2021-03-07T13:00:00Z

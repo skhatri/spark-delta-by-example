@@ -24,7 +24,12 @@ object SpendingActivityTask extends App {
       .option("timestamp", s"${eodDate}T13:00:00Z")
       .option("timestampAsOf", s"${eodDate}T13:00:00Z")
       .csv(s"${R.inputPath}/$eodDate/*.csv")
-      .selectExpr("*", "false as deleted")
+      .selectExpr(
+        "*",
+        "false as deleted",
+        "'%s' as load_date".format(eodDate)
+      )
+
 
     if (isDelta) {
       val deltaTable = DeltaTable.forPath(R.outputPath)
