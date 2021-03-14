@@ -1,0 +1,11 @@
+metastore_db
+warehouse
+output
+out
+build
+.gradle
+*.log
+*.ipr
+*.iml
+*.iws
+.idea

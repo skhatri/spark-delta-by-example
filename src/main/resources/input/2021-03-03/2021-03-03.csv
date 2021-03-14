@@ -1,0 +1,16 @@
+account,txn_date,txn_id,merchant,amount,category,last_updated
+acc1,2021-03-03,txn16,"Hungry Jacks",12.95,Restaurant,2021-03-02T13:00:00Z
+acc1,2021-03-03,txn17,"Ted Baker Parramatta",119,Clothing,2021-03-02T13:00:00Z
+acc1,2021-03-03,txn18,"Lulu Lemon Sydney",200,Clothing,2021-03-02T13:00:00Z
+acc2,2021-03-03,txn19,"Tag Heuer Town hall",3200,Watch,2021-03-02T13:00:00Z
+acc2,2021-03-03,txn20,"Prada Sydney",1900,Fashion,2021-03-02T13:00:00Z
+acc2,2021-03-03,txn21,"Opal Transport",40,Transport,2021-03-02T13:00:00Z
+acc3,2021-03-03,txn22,"Optus Phone",40,Phone,2021-03-02T13:00:00Z
+acc3,2021-03-03,txn23,"Just Jeans",39.95,Clothing,2021-03-02T13:00:00Z
+acc3,2021-03-03,txn24,"TPG Internet",69.95,Internet,2021-03-02T13:00:00Z
+acc4,2021-03-03,txn25,"Prouds Jewellery",89.0,Jewellery,2021-03-02T13:00:00Z
+acc4,2021-03-03,txn26,"Boost Juice",6.50,Drinks,2021-03-02T13:00:00Z
+acc4,2021-03-03,txn27,"Zushi Sushi",95,Restaurant,2021-03-02T13:00:00Z
+acc5,2021-03-03,txn28,"Cotton On Homebush",25,Clothing,2021-03-02T13:00:00Z
+acc5,2021-03-03,txn29,"Michael Kors Homebush",199,Fashion,2021-03-02T13:00:00Z
+acc5,2021-03-03,txn30,"Strandbags Sydney",89.95,Travel,2021-03-02T13:00:00Z

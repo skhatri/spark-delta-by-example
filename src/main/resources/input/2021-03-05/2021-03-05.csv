@@ -1,0 +1,16 @@
+account,txn_date,txn_id,merchant,amount,category,last_updated
+acc1,2021-03-05,txn31,"Lindt Cafe Miranda",9,Coffee,2021-03-04T13:00:00Z
+acc1,2021-03-05,txn32,"Myers Miranda",54.95,Clothing,2021-03-04T13:00:00Z
+acc1,2021-03-05,txn33,"Lulu Lemon Sydney",80,Clothing,2021-03-04T13:00:00Z
+acc2,2021-03-05,txn34,"Walrus Cafe Town Hall",3.50,Coffee,2021-03-04T13:00:00Z
+acc2,2021-03-05,txn35,"David Jones Sydney",120,Clothing,2021-03-04T13:00:00Z
+acc2,2021-03-05,txn36,"Kathmandu Miranda",69.95,Clothing,2021-03-04T13:00:00Z
+acc3,2021-03-05,txn37,"T2 Town Hall",29.0,Drinks,2021-03-04T13:00:00Z
+acc3,2021-03-05,txn38,"Nike Auburn",49.95,Clothing,2021-03-04T13:00:00Z
+acc3,2021-03-05,txn39,"Filter Cafe Mortdale",7.05,Coffee,2021-03-04T13:00:00Z
+acc4,2021-03-05,txn40,"Gloria Jeans Hurstville",4.0,Coffee,2021-03-04T13:00:00Z
+acc4,2021-03-05,txn41,"Vapiano",20.0,Restaurant,2021-03-04T13:00:00Z
+acc4,2021-03-05,txn42,"BWS Liquor Mortdale",19.95,Drinks,2021-03-04T13:00:00Z
+acc5,2021-03-05,txn43,"Woolworths Menai",78.14,Groceries,2021-03-04T13:00:00Z
+acc5,2021-03-05,txn44,"Apple Store Sydney",1500,Hardware,2021-03-04T13:00:00Z
+acc5,2021-03-05,txn45,"ChaTime Hurstville",5.5,Drinks,2021-03-04T13:00:00Z

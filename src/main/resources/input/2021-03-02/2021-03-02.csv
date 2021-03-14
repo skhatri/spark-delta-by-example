@@ -1,0 +1,20 @@
+account,txn_date,txn_id,merchant,amount,category,last_updated
+acc1,2021-03-02,txn1,"Apple Store Sydney",99.0,Hardware,2021-03-01T13:00:00Z
+acc1,2021-03-02,txn2,"Arisun Restaurant",66.45,Restaurant,2021-03-01T13:00:00Z
+acc1,2021-03-02,txn3,"Sunny's Seafood",21.05,Food,2021-03-01T13:00:00Z
+acc2,2021-03-02,txn4,"Coles Hurstville",108.84,Groceries,2021-03-01T13:00:00Z
+acc2,2021-03-02,txn5,"Woolworths Kogarah",65,Groceries,2021-03-01T13:00:00Z
+acc2,2021-03-02,txn6,"18 Grams Cafe",3.50,Restaurant,2021-03-01T13:00:00Z
+acc3,2021-03-02,txn7,"Vapiano",34.0,Restaurant,2021-03-01T13:00:00Z
+acc3,2021-03-02,txn8,"Zushi Sushi",44,Restaurant,2021-03-01T13:00:00Z
+acc3,2021-03-02,txn9,"Sushi Hub",14,Restaurant,2021-03-01T13:00:00Z
+acc4,2021-03-02,txn10,"Prouds Jewellery",189,Jewellery,2021-03-01T13:00:00Z
+acc4,2021-03-02,txn11,"Boost Juice",10,Restaurant,2021-03-01T13:00:00Z
+acc4,2021-03-02,txn12,"Dan Murphy's",44,Liquor,2021-03-01T13:00:00Z
+acc5,2021-03-02,txn13,"Liquorland Hurstville",14,Liquor,2021-03-01T13:00:00Z
+acc5,2021-03-02,txn14,"Officeworks Allawah",7,Stationery,2021-03-01T13:00:00Z
+acc5,2021-03-02,txn15,"Priceline Pharmacy",18,Medicine,2021-03-01T13:00:00Z
+
+
+
+
