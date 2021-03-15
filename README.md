@@ -49,6 +49,18 @@ LOCATION '/opt/data/output/activity/_symlink_format_manifest/';
 MSCK REPAIR TABLE banking.transactions;
 ```
 
+#### Create Manifest for Hive
+Run ```PrestoTrinoConfigTask``` which executes the ```deltaTable.generate("symlink_format_manifest")```
+to generate manifests for the latest snapshot.
+
+#### Create Time-travel (snapshots) Hive
+Run ```DeltaLogSnapshots``` which creates manifest files for each version. This can help
+time travel when querying from Presto/Trino. Filter for version in presto like this
+```
+select * from hive.banking.transactions 
+where version=cast('2021-03-03' as date)
+order by last_updated desc;
+```
 
 
 

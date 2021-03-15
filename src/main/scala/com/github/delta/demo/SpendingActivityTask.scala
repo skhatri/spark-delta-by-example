@@ -14,7 +14,7 @@ object SpendingActivityTask extends App {
     .config("spark.databricks.delta.retentionDurationCheck.enabled", "false")
     .getOrCreate()
 
-  val eods = Seq("2021-03-02", "2021-03-03", "2021-03-05", "2021-03-08", "2021-03-09")
+  val eods = Seq("2021-03-02", "2021-03-03", "2021-03-05", "2021-03-08" , "2021-03-09")
 
   eods.foreach(eodDate => {
     val isDelta = DeltaTable.isDeltaTable(R.outputPath)
@@ -33,6 +33,7 @@ object SpendingActivityTask extends App {
       ).drop("txn_date", "amount")
       .withColumnRenamed("amt", "amount")
       .withColumnRenamed("transaction_date", "txn_date")
+      .repartition(2)
 
 
     if (isDelta) {
@@ -54,6 +55,7 @@ object SpendingActivityTask extends App {
         .save(R.outputPath)
     }
   })
+  DeltaTable.forPath(R.outputPath).generate("symlink_format_manifest")
 
   spark.stop()
   spark.close()
